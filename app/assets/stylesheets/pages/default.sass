@@ -1,0 +1,38 @@
+header.main
+  +navbar($layout: 'fluid-fixed')
+  margin-bottom: 0
+
+main.main
+  +container
+
+  .content
+    +row
+
+  article.main
+    background-color: map-get($white, darker)
+    min-height: 100vh
+    position: relative
+
+    &:before
+      content: ' '
+      display: block
+      background-color: map-get($white, darker)
+      min-height: 100vh
+      position: absolute
+      right: 100%
+      left: -100%
+
+
+    +column(6)
+
+    @media screen and (min-width: $desktop)
+      +column(10)
+
+  aside.main
+    background-color: white
+
+    +column(6)
+
+    @media screen and (min-width: $desktop)
+      +column(2)
+

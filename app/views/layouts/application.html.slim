@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title VeganKit
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  body
+    header.main
+      nav
+        ul
+          li
+            a(href="/why-vegan") Why Vegan?
+          li
+            a(href="/becoming-vegan") Becoming Vegan
+          li
+            a(href="/food") Food
+          li
+            a(href="/clothing") Clothing
+          li
+            a(href="/knowledge") Knowledge
+    main.main
+      .content
+        article.main
+          = yield
+        aside.main
+          = yield :sidebar
+    footer.main
