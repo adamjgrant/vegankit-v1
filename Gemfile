@@ -39,5 +39,5 @@ gem 'spring',        group: :development
 gem 'foreman'
 gem 'sass', '~> 3.4'
 gem 'autoprefixer-rails'
-gem 'kickstart_rails', '~> 3.0.16'
+gem 'kickstart_rails', '~> 3.0'
 gem 'slim'

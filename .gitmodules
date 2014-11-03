@@ -1,0 +1,3 @@
+[submodule "app/assets/stylesheets/themes/kickstart-serenity-theme"]
+	path = app/assets/stylesheets/themes/kickstart-serenity-theme
+	url = git://github.com/ajkochanowicz/kickstart-serenity-theme.git
