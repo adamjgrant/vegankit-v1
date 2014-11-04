@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
 # gem 'sass-rails', '~> 5.0.0.beta1'
 # Use SCSS for stylesheets
 # Use Uglifier as compressor for JavaScript assets
@@ -45,4 +47,4 @@ gem 'slim'
 gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
 gem 'refinerycms', github: 'refinery/refinerycms', branch: "master"
 # Strong parameters is a new feature not used by Refinery
-gem 'protected_attributes'
+# gem 'protected_attributes'
